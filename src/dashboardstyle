@@ -1,0 +1,509 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-[#111418] dark group/design-root overflow-x-hidden"
+      style='--checkbox-tick-svg: url(&apos;data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(255,255,255)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e&apos;); font-family: "Space Grotesk", "Noto Sans", sans-serif;'
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <div class="gap-1 px-6 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col w-80">
+            <h3 class="text-white tracking-light text-2xl font-bold leading-tight px-4 text-left pb-2 pt-5">Quick Stats</h3>
+            <div class="flex flex-wrap gap-4 p-4">
+              <div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-6 border border-[#3b4754]">
+                <p class="text-white text-base font-medium leading-normal">Total Active Streaks</p>
+                <p class="text-white tracking-light text-2xl font-bold leading-tight">5</p>
+              </div>
+              <div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-6 border border-[#3b4754]">
+                <p class="text-white text-base font-medium leading-normal">Longest Current Streak</p>
+                <p class="text-white tracking-light text-2xl font-bold leading-tight">12 days</p>
+              </div>
+              <div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-6 border border-[#3b4754]">
+                <p class="text-white text-base font-medium leading-normal">Weekly Progress</p>
+                <p class="text-white tracking-light text-2xl font-bold leading-tight">75%</p>
+              </div>
+              <div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-6 border border-[#3b4754]">
+                <p class="text-white text-base font-medium leading-normal">XP/Level</p>
+                <p class="text-white tracking-light text-2xl font-bold leading-tight">1500/Level 5</p>
+              </div>
+            </div>
+            <div class="flex px-4 py-3">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 flex-1 bg-[#3d98f4] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Create New Streak</span>
+              </button>
+            </div>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Recent Activity</h3>
+            <div class="flex items-center gap-4 bg-[#111418] px-4 min-h-[72px] py-2">
+              <div class="text-white flex items-center justify-center rounded-lg bg-[#283039] shrink-0 size-12" data-icon="Check" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                </svg>
+              </div>
+              <div class="flex flex-col justify-center">
+                <p class="text-white text-base font-medium leading-normal line-clamp-1">Productivity Boost</p>
+                <p class="text-[#9cabba] text-sm font-normal leading-normal line-clamp-2">Completed 5 tasks</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#111418] px-4 min-h-[72px] py-2">
+              <div class="text-white flex items-center justify-center rounded-lg bg-[#283039] shrink-0 size-12" data-icon="Fire" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M183.89,153.34a57.6,57.6,0,0,1-46.56,46.55A8.75,8.75,0,0,1,136,200a8,8,0,0,1-1.32-15.89c16.57-2.79,30.63-16.85,33.44-33.45a8,8,0,0,1,15.78,2.68ZM216,144a88,88,0,0,1-176,0c0-27.92,11-56.47,32.66-84.85a8,8,0,0,1,11.93-.89l24.12,23.41,22-60.41a8,8,0,0,1,12.63-3.41C165.21,36,216,84.55,216,144Zm-16,0c0-46.09-35.79-85.92-58.21-106.33L119.52,98.74a8,8,0,0,1-13.09,3L80.06,76.16C64.09,99.21,56,122,56,144a72,72,0,0,0,144,0Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex flex-col justify-center">
+                <p class="text-white text-base font-medium leading-normal line-clamp-1">Fitness Challenge</p>
+                <p class="text-[#9cabba] text-sm font-normal leading-normal line-clamp-2">Streak of 7 days</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#111418] px-4 min-h-[72px] py-2">
+              <div class="text-white flex items-center justify-center rounded-lg bg-[#283039] shrink-0 size-12" data-icon="BookOpen" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M224,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h64a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex flex-col justify-center">
+                <p class="text-white text-base font-medium leading-normal line-clamp-1">Learning Journey</p>
+                <p class="text-[#9cabba] text-sm font-normal leading-normal line-clamp-2">Reached Level 3</p>
+              </div>
+            </div>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Settings</h3>
+            <div class="flex items-center gap-4 bg-[#111418] px-4 min-h-14 justify-between">
+              <p class="text-white text-base font-normal leading-normal flex-1 truncate">Theme</p>
+              <div class="shrink-0">
+                <label
+                  class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-[#283039] p-0.5 has-[:checked]:justify-end has-[:checked]:bg-[#3d98f4]"
+                >
+                  <div class="h-full w-[27px] rounded-full bg-white" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px, rgba(0, 0, 0, 0.06) 0px 3px 1px;"></div>
+                  <input type="checkbox" class="invisible absolute" />
+                </label>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#111418] px-4 min-h-14 justify-between">
+              <p class="text-white text-base font-normal leading-normal flex-1 truncate">Notifications</p>
+              <div class="shrink-0">
+                <label
+                  class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-[#283039] p-0.5 has-[:checked]:justify-end has-[:checked]:bg-[#3d98f4]"
+                >
+                  <div class="h-full w-[27px] rounded-full bg-white" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px, rgba(0, 0, 0, 0.06) 0px 3px 1px;"></div>
+                  <input type="checkbox" class="invisible absolute" />
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <h2 class="text-white tracking-light text-[28px] font-bold leading-tight px-4 text-left pb-3 pt-5">StreakMaster Dashboard</h2>
+            <div class="flex flex-col gap-3 p-4">
+              <div class="flex gap-6 justify-between">
+                <p class="text-white text-base font-medium leading-normal">Current Streak</p>
+                <p class="text-white text-sm font-normal leading-normal">75%</p>
+              </div>
+              <div class="rounded bg-[#3b4754]"><div class="h-2 rounded bg-white" style="width: 75%;"></div></div>
+              <p class="text-[#9cabba] text-sm font-normal leading-normal">7 days</p>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-6 p-4">
+              <div class="flex min-w-72 max-w-[336px] flex-1 flex-col gap-0.5">
+                <div class="flex items-center p-1 justify-between">
+                  <button>
+                    <div class="text-white flex size-10 items-center justify-center" data-icon="CaretLeft" data-size="18px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path>
+                      </svg>
+                    </div>
+                  </button>
+                  <p class="text-white text-base font-bold leading-tight flex-1 text-center pr-10">July 2024</p>
+                </div>
+                <div class="grid grid-cols-7">
+                  <p class="text-white text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">S</p>
+                  <p class="text-white text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">M</p>
+                  <p class="text-white text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">T</p>
+                  <p class="text-white text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">W</p>
+                  <p class="text-white text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">T</p>
+                  <p class="text-white text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">F</p>
+                  <p class="text-white text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">S</p>
+                  <button class="h-12 w-full text-white col-start-4 text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">1</div>
+                  </button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">2</div></button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">3</div></button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">4</div></button>
+                  <button class="h-12 w-full text-white rounded-l-full bg-[#283039] text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full bg-[#3d98f4]">5</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">6</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">7</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">8</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">9</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">10</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">11</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">12</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">13</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">14</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">15</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">16</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">17</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">18</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">19</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">20</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">21</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">22</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">23</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">24</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">25</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">26</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">27</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">28</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">29</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">30</div>
+                  </button>
+                </div>
+              </div>
+              <div class="flex min-w-72 max-w-[336px] flex-1 flex-col gap-0.5">
+                <div class="flex items-center p-1 justify-between">
+                  <p class="text-white text-base font-bold leading-tight flex-1 text-center pl-10">August 2024</p>
+                  <button>
+                    <div class="text-white flex size-10 items-center justify-center" data-icon="CaretRight" data-size="18px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+                <div class="grid grid-cols-7">
+                  <p class="text-white text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">S</p>
+                  <p class="text-white text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">M</p>
+                  <p class="text-white text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">T</p>
+                  <p class="text-white text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">W</p>
+                  <p class="text-white text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">T</p>
+                  <p class="text-white text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">F</p>
+                  <p class="text-white text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">S</p>
+                  <button class="h-12 w-full bg-[#283039] text-white col-start-4 text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">1</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">2</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">3</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">4</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">5</div>
+                  </button>
+                  <button class="h-12 w-full bg-[#283039] text-white text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full">6</div>
+                  </button>
+                  <button class="h-12 w-full text-white rounded-r-full bg-[#283039] text-sm font-medium leading-normal">
+                    <div class="flex size-full items-center justify-center rounded-full bg-[#3d98f4]">7</div>
+                  </button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">8</div></button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">9</div></button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">10</div></button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">11</div></button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">12</div></button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">13</div></button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">14</div></button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">15</div></button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">16</div></button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">17</div></button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">18</div></button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">19</div></button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">20</div></button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">21</div></button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">22</div></button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">23</div></button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">24</div></button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">25</div></button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">26</div></button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">27</div></button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">28</div></button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">29</div></button>
+                  <button class="h-12 w-full text-white text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full">30</div></button>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Habit Completion</h3>
+            <div class="flex items-center gap-4 bg-[#111418] px-4 min-h-14 justify-between">
+              <p class="text-white text-base font-normal leading-normal flex-1 truncate">Morning Exercise</p>
+              <div class="shrink-0">
+                <div class="flex size-7 items-center justify-center">
+                  <input
+                    type="checkbox"
+                    class="h-5 w-5 rounded border-[#3b4754] border-2 bg-transparent text-[#3d98f4] checked:bg-[#3d98f4] checked:border-[#3d98f4] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#3b4754] focus:outline-none"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#111418] px-4 min-h-14 justify-between">
+              <p class="text-white text-base font-normal leading-normal flex-1 truncate">Read 20 Pages</p>
+              <div class="shrink-0">
+                <div class="flex size-7 items-center justify-center">
+                  <input
+                    type="checkbox"
+                    class="h-5 w-5 rounded border-[#3b4754] border-2 bg-transparent text-[#3d98f4] checked:bg-[#3d98f4] checked:border-[#3d98f4] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#3b4754] focus:outline-none"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#111418] px-4 min-h-14 justify-between">
+              <p class="text-white text-base font-normal leading-normal flex-1 truncate">Meditate for 10 Minutes</p>
+              <div class="shrink-0">
+                <div class="flex size-7 items-center justify-center">
+                  <input
+                    type="checkbox"
+                    class="h-5 w-5 rounded border-[#3b4754] border-2 bg-transparent text-[#3d98f4] checked:bg-[#3d98f4] checked:border-[#3d98f4] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#3b4754] focus:outline-none"
+                  />
+                </div>
+              </div>
+            </div>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Analytics</h3>
+            <div class="flex flex-wrap gap-4 px-4 py-6">
+              <div class="flex min-w-72 flex-1 flex-col gap-2 rounded-xl border border-[#3b4754] p-6">
+                <p class="text-white text-base font-medium leading-normal">Streak Performance</p>
+                <p class="text-white tracking-light text-[32px] font-bold leading-tight truncate">75%</p>
+                <div class="flex gap-1">
+                  <p class="text-[#9cabba] text-base font-normal leading-normal">Last 30 Days</p>
+                  <p class="text-[#0bda5b] text-base font-medium leading-normal">+10%</p>
+                </div>
+                <div class="flex min-h-[180px] flex-1 flex-col gap-8 py-4">
+                  <svg width="100%" height="148" viewBox="-3 0 478 150" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                    <path
+                      d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25V149H326.769H0V109Z"
+                      fill="url(#paint0_linear_1131_5935)"
+                    ></path>
+                    <path
+                      d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25"
+                      stroke="#9cabba"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                    ></path>
+                    <defs>
+                      <linearGradient id="paint0_linear_1131_5935" x1="236" y1="1" x2="236" y2="149" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#283039"></stop>
+                        <stop offset="1" stop-color="#283039" stop-opacity="0"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <div class="flex justify-around">
+                    <p class="text-[#9cabba] text-[13px] font-bold leading-normal tracking-[0.015em]">Week 1</p>
+                    <p class="text-[#9cabba] text-[13px] font-bold leading-normal tracking-[0.015em]">Week 2</p>
+                    <p class="text-[#9cabba] text-[13px] font-bold leading-normal tracking-[0.015em]">Week 3</p>
+                    <p class="text-[#9cabba] text-[13px] font-bold leading-normal tracking-[0.015em]">Week 4</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">AI Coaching</h3>
+            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Based on your progress, consider adding a new habit to your routine to further enhance your productivity. How about learning a new language for 15 minutes daily?
+            </p>
+          </div>
+          <div class="layout-content-container flex flex-col">
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Today's Habits</h3>
+            <div class="px-4">
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#3b4754] border-2 bg-transparent text-[#3d98f4] checked:bg-[#3d98f4] checked:border-[#3d98f4] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#3b4754] focus:outline-none"
+                  checked=""
+                />
+                <p class="text-white text-base font-normal leading-normal">Morning Exercise</p>
+              </label>
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#3b4754] border-2 bg-transparent text-[#3d98f4] checked:bg-[#3d98f4] checked:border-[#3d98f4] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#3b4754] focus:outline-none"
+                  checked=""
+                />
+                <p class="text-white text-base font-normal leading-normal">Read 20 Pages</p>
+              </label>
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#3b4754] border-2 bg-transparent text-[#3d98f4] checked:bg-[#3d98f4] checked:border-[#3d98f4] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#3b4754] focus:outline-none"
+                />
+                <p class="text-white text-base font-normal leading-normal">Meditate for 10 Minutes</p>
+              </label>
+            </div>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Upcoming Reminders</h3>
+            <div class="flex items-center gap-4 bg-[#111418] px-4 min-h-14 justify-between">
+              <p class="text-white text-base font-normal leading-normal flex-1 truncate">Evening Review</p>
+              <div class="shrink-0"><p class="text-[#9cabba] text-sm font-normal leading-normal">7:00 PM</p></div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#111418] px-4 min-h-14 justify-between">
+              <p class="text-white text-base font-normal leading-normal flex-1 truncate">Plan Tomorrow</p>
+              <div class="shrink-0"><p class="text-[#9cabba] text-sm font-normal leading-normal">9:00 PM</p></div>
+            </div>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Achievements</h3>
+            <div class="flex items-center gap-4 bg-[#111418] px-4 min-h-14 justify-between">
+              <p class="text-white text-base font-normal leading-normal flex-1 truncate">7-Day Streak</p>
+              <div class="shrink-0">
+                <div class="flex size-7 items-center justify-center"><div class="size-3 rounded-full bg-[#0bda5b]"></div></div>
+              </div>
+            </div>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Weather &amp; Mood</h3>
+            <div class="flex items-center gap-4 bg-[#111418] px-4 min-h-14 justify-between">
+              <p class="text-white text-base font-normal leading-normal flex-1 truncate">Sunny, 25°C</p>
+              <div class="shrink-0">
+                <div class="text-white flex size-7 items-center justify-center" data-icon="Sun" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#111418] px-4 min-h-14 justify-between">
+              <p class="text-white text-base font-normal leading-normal flex-1 truncate">Mood: Productive</p>
+              <div class="shrink-0">
+                <div class="text-white flex size-7 items-center justify-center" data-icon="Smiley" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216ZM80,108a12,12,0,1,1,12,12A12,12,0,0,1,80,108Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,176,108Zm-1.07,48c-10.29,17.79-27.4,28-46.93,28s-36.63-10.2-46.92-28a8,8,0,1,1,13.84-8c7.47,12.91,19.21,20,33.08,20s25.61-7.1,33.07-20a8,8,0,0,1,13.86,8Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Community Leaderboard</h3>
+            <div class="flex items-center gap-4 bg-[#111418] px-4 min-h-[72px] py-2">
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBe8PHPauPjrZuZQ4PldRN0jdHRgKK05bpCh7SKf47VlHVhInUmjTxOw2d207jPRuzCweSH_0v-itawFEOAns2GPjFAP2yDa__0JZiLMDWYyt_U6ZmzMwJOj1iI7dv7cJpFDJhhCZXZnoZ6MMWVu6NQnFgW02SgmcWnWvtGi_cWupyVmTgOWve0KuTN6aKID-INyUhqq3dOzINTS1BBk6cDkYtvlqlH4ir8LrI8vc1q8kqrjLeWWIyozgHtImDBIG2yIq9JSk7U-78");'
+              ></div>
+              <div class="flex flex-col justify-center">
+                <p class="text-white text-base font-medium leading-normal line-clamp-1">Alex Turner</p>
+                <p class="text-[#9cabba] text-sm font-normal leading-normal line-clamp-2">1500 XP</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#111418] px-4 min-h-[72px] py-2">
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAdcm5ehm68vtfAitt3ejukhe2daZNpATsbUuiP1ZABObljuWLmgaSXKgec1WyIFZ5BYGRZ3hiDQ2OnSk11GHJuP7vOpj5SORJpwsTMso_tKIeFJAwxAFqbCFIclHyV9fw-jYJimdJ4AnsiDLvD4Ci7z96kGBZJqCdUBqol3H_yawqDBmOJa5nhEWlr0XuH1BrNXF4VI4ehYxcbdxv_-v1h180q5KtkrDzkylhSquLC8njIPHKP2BFpv5EqbMGBBHpXRecxxrSWbV8");'
+              ></div>
+              <div class="flex flex-col justify-center">
+                <p class="text-white text-base font-medium leading-normal line-clamp-1">Olivia Bennett</p>
+                <p class="text-[#9cabba] text-sm font-normal leading-normal line-clamp-2">1450 XP</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#111418] px-4 min-h-[72px] py-2">
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDyXVBx7PrQawPQZV8DnLtD5mi7M2N3i-L2AbVnDwFTT91rTEZacu-1ZipV6bBkkwJovVKMGRZPrcbWgGuBW-RJdjXhJiWMJhVwZriK6AX-5CXXcGPUapjWEgDTkcSvMf-v8-0phcubboQa7u9KutWcYqZ9oEwUstmOV_GCXECexLVkEKRhjerM8j0kv1_VJtVHgTKPSmYWDZ2Q_CAzmm3sPmd-AnFPwBQPMXGNRQF03GSLikZtJghPOURzNZTwN6TGTM2wQK0Mt8A");'
+              ></div>
+              <div class="flex flex-col justify-center">
+                <p class="text-white text-base font-medium leading-normal line-clamp-1">Ethan Carter</p>
+                <p class="text-[#9cabba] text-sm font-normal leading-normal line-clamp-2">1400 XP</p>
+              </div>
+            </div>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Quick Actions</h3>
+            <div class="flex items-center gap-4 bg-[#111418] px-4 min-h-14 justify-between">
+              <p class="text-white text-base font-normal leading-normal flex-1 truncate">Add Habit</p>
+              <div class="shrink-0">
+                <div class="text-white flex size-7 items-center justify-center" data-icon="Plus" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#111418] px-4 min-h-14 justify-between">
+              <p class="text-white text-base font-normal leading-normal flex-1 truncate">View Analytics</p>
+              <div class="shrink-0">
+                <div class="text-white flex size-7 items-center justify-center" data-icon="ChartLine" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M232,208a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V48a8,8,0,0,1,16,0v94.37L90.73,98a8,8,0,0,1,10.07-.38l58.81,44.11L218.73,90a8,8,0,1,1,10.54,12l-64,56a8,8,0,0,1-10.07.38L96.39,114.29,40,163.63V200H224A8,8,0,0,1,232,208Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#111418] px-4 min-h-14 justify-between">
+              <p class="text-white text-base font-normal leading-normal flex-1 truncate">Edit Profile</p>
+              <div class="shrink-0">
+                <div class="text-white flex size-7 items-center justify-center" data-icon="User" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

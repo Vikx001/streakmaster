@@ -1,11 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Login() {
   return (
-    <div style={{ padding: '1rem' }}>
-      <h2 style={{ fontSize: '1.25rem', fontWeight: 'bold', marginBottom: '0.5rem' }}>Login</h2>
-      <input style={{ border: '1px solid #d1d5db', padding: '0.5rem', width: '100%', marginBottom: '1rem' }} placeholder="Enter username" />
-      <button style={{ backgroundColor: '#3b82f6', color: '#fff', padding: '0.5rem 1rem', borderRadius: '0.25rem' }}>Log In</button>
+    <div style={{ 
+      minHeight: '100vh', 
+      backgroundColor: '#111518', 
+      color: 'white',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center'
+    }}>
+      <h1>Login Page</h1>
+      <Link to="/app" style={{ color: '#1993e5' }}>Go to App</Link>
     </div>
   );
 }

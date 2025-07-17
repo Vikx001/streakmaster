@@ -12,6 +12,16 @@ code {
     monospace;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 /* Futuristic Animations for StreakMaster Pro */
 @keyframes cyber-scan {
   0% {
